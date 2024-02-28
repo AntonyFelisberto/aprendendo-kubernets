@@ -1,0 +1,29 @@
+minikube status
+minikube start
+
+minikube addons list
+minikube addons enable metrics-server
+minikube service wordpress-service --url
+
+
+kubectl get hpa
+kubectl get svc
+kubectl top pods
+kubectl get pods
+kubectl get service  
+kubectl get secrets 
+kubectl get deployment
+kubectl create -f wordpress
+kubectl delete -f wordpress
+kubectl create -f configuracoes.yml
+kubectl create -f mysql-deployment.yml
+kubectl create -f services-wordpress.yml
+kubectl apply -f wordpress-deployment.yml
+kubectl create -f wordpress-deployment.yml
+kubectl logs wordpress-deployment-7c869d898f-qt5mh
+kubectl apply -f wordpress\wordpress-deployment.yml
+kubectl autoscale deployment wordpress=deployment --cpu-percent=20 --min=1 --max=20
+
+siege c20 t60s URL_DO_SEU_SERVICO
+
+kubectl
